@@ -31,7 +31,7 @@ checkBtn.addEventListener('click', () => {
     document.body.style.backgroundColor = '#60b347';
     number.innerText = randomNumber;
     messageHandler('🎉 Correct Number!');
-
+    number.style.width = '30rem';
     //
     if (newHighScore < newScore) {
       newHighScore = newScore;
@@ -61,4 +61,7 @@ again.addEventListener('click', () => {
   document.body.style.backgroundColor = '#222';
   newScore = 20;
   score.innerText = newScore;
+  messageHandler('Start guessing...');
+
+  number.style.width = '15rem';
 });
