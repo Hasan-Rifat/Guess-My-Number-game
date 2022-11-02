@@ -47,9 +47,7 @@ checkBtn.addEventListener('click', () => {
 
       //highscore
       highScore.innerText = newHighScore;
-      checkNumber > randomNumber
-        ? messageHandler('📈 to high')
-        : messageHandler('📈 to low');
+      messageHandler(checkNumber > randomNumber ? '📈 to high' : '📈 to low');
     }
   }
 });
